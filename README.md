@@ -4,18 +4,23 @@
 second-level domain + hostry.com name server
 
 ### eu.org
-https://nic.eu.org/
+https://nic.eu.org
+
 un: KG384-FREE
+
 ref: https://dallas.lu/zh-CN/eu-org-domain-register-usage/
 
 ### hostry
-https://hostry.com/
+https://hostry.com
+
 un: sd*01
 
 ## cloudflare tunnel
 Cloudflare Tunnel CDN
 https://dash.cloudflare.com/login
+
 un: sd*01
+
 ref: https://bra.live/setup-home-server-with-cloudflare-tunnel/
 
 ### install
@@ -38,6 +43,7 @@ cloudflared tunnel create [tunnel_name]
 domain route
 ```
 cloudflared tunnel route dns [tunnel_name] [domain]
+```
 
 config
 ```
@@ -70,6 +76,7 @@ ingress:
     service: ssh://localhost:22
   - service: http_status:404
 ```
+
 ref: https://developers.cloudflare.com/cloudflare-one/connections/connect-networks/configure-tunnels/local-management/configuration-file/#origin-configuration
 
 test
